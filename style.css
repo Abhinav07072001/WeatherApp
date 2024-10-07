@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f8ff;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.weather-app{
+    background:white;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#city-input{
+    font-size: 16px;
+    width: 80%;    
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+/* weather search button*/
+#searchButton{
+    color: white;
+    background-color: grey;
+    padding: none;
+    border-radius: 4px;
+    border: 2px solid #333 ;
+    cursor:pointer;
+    font-size:  13px;
+    transition: background-color 0.3s ease;
+}
+#searchButton:hover{
+    background-color: black;
+}
+ /* weather result section */
+ .weather-result{
+    margin-top: 20px;
+ }
+
+ .weather-result h2 {
+    margin: 10px 0;
+}
+.weather-result p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* responsive design for other device*/
+@media(max-width 768px) {
+    .weather-app{
+        width: 90%;
+        padding: 15px;
+    }
+    #cityInput, #searchButton {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+}
